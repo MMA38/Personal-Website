@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(0deg, #a08585 10%, #635f84 50% , #486a85 100%);
+    background-attachment: fixed; /* Ensures the background doesn't move with scroll */
+    display:block;
+    margin: 4px;
+}
+/*header section adding the colors and curved corners flexible with screen size*/
+.header{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(164, 94, 94), rgb(179, 179, 130),  rgb(164, 94, 94)); /* Horizontal gradient */
+    border-radius: 0px 0px  30% 30%;  /* Curved corners */
+}
+nav {
+    /* configuring the navigation bar
+     * centers and sets the block as flex */
+    display: flex;
+    justify-content: space-between; /* Distributes items evenly with space between */
+    padding:0 2% 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pageslinks ul li{
+    /* remove dots on all lists*/
+    /*Puts the list in one line instead of on top each other*/
+    list-style: none;
+    display: inline-block; /* Places items horizontally in a single line */
+    position: relative;
+}
+
+/* Links inside the navigation bar */
+.pageslinks ul li a.link {
+    /* Styling the links for navigation */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+.pageslinks ul li a.link:hover {
+    /* Adding hover effect for navigation links */
+    background-color: rgba(116, 51, 51, 0.826);
+    border-radius: 10px;
+}
+
+/* Name and title in the header section */
+.name h1 {
+    /* Styling the main name in the header */
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    color: white;
+    margin-top: 20px;
+}
+
+.name p {
+    /* Styling the software developer subtitle */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+/* Info Section */
+.info-section {
+    padding: 30px 2%;
+}
+
+/* Row layout for the info section */
+.rows {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Column layout inside rows */
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the media column (profile picture and contact details) */
+#media {
+    display:flex;
+    text-align: center;
+    background-color:  rgba(190, 147, 159, 0.717);
+    border-radius: 30%;
+    margin: 1em;
+    background-size:contain;
+}
+
+#media img {
+    /* Styling profile image */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ul.contact {
+    /* Styling the contact list */
+    list-style: none;
+}
+
+ul.contact li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul.contact li a.link {
+    /* Styling contact links */
+    text-decoration: none;
+    color: #235177;
+    transition: color 0.3s ease;
+}
+
+ul.contact li a.link:hover {
+    color: #a08585;
+}
+@media(max-width: 600px) {
+    .name h1 {
+        font-size: 45px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background-image: linear-gradient(60deg, #d33a3a 30%, #350160 80% , #047ed3 100%);
+        background-attachment: fixed;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        /*Keeps the bar hidden when the page loads*/
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+}
+/* Styling About Me Section */
+#about-me h2, #hobby h2, #intrst h2, #college h2 {
+    /* Section headers */
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: #050314;
+    margin-bottom: 15px;
+}
+#about-me{
+    background-color:rgba(239, 226, 226, 0.8);
+    display:flex;
+    flex-direction:column;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+}
+#about-me p, #hobby p, #intrst p, #college p {
+    /* Text paragraphs in each section */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hover effect for links */
+a.link:hover {
+    color: #635f84;
+}
+
+/* Additional columns for hobbies, interests, and college */
+#hobby, #intrst, #college {
+    flex-basis: 32%;
+    background-color: rgba(239, 226, 226, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Ensure columns are well spaced */
+.columns {
+    margin:5px;
+}
+@media (max-width: 600px) {
+    .rows {
+        flex-direction: column;
+    }
+    .columns {
+        margin: 1%;
+    }
+    .columns h2 {
+        font-size: 28px;
+    }
+    .columns p {
+    font-size: 12px;
+    }
+    #media img {
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    #media ul li{
+        font-size: 14px;
+    }
+    #media ul li a::after{
+        transition: background-color 0.3s ease;
+    }
+    #media ul li a:hover{
+        background-color: #d33a3a;
+    }
+}
+
+footer {
+    font-family: SansSerif;
+    font-size: 16px;
+    padding: 3% 1% 0;
+    width: 100%;
+    color: #100f0f;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+}
+/* Source : W3schools, https://www.w3schools.com/ */    

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Name and title in the header section */
+.name h1 {
+    /* Styling the main name in the header */
+    font-family: 'Times New Roman', Times;
+    font-size: 45px;
+    color: white;
+    margin-top: 20px;
+}
+/* the section in the body*/
+.resume{
+    margin: 5px;
+    padding: 2%;
+    color: snow;
+    background-image: linear-gradient(140deg, rgba(211, 58, 58, 0.15) 20%, rgba(53, 1, 96, 0.15) 50% , rgba(4, 126, 211, 0.15) 100%);
+    background-attachment:fixed;
+    border-radius: 10%;
+}
+/* the header of each section*/
+.row h2{
+    margin: 10px; 
+    font-size:150%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(13, 13, 50);
+}
+/*Styling h3 elements*/
+.row h3{
+    display: inline-block;
+    margin:10px 2rem 10px 10px;
+    font-size: 20px;
+    color: rgb(40, 31, 31);  
+}
+ul li a.link {
+    color: rgb(243, 236, 236);
+    text-decoration: none;  
+    transition: background-color 0.3s ease;
+}
+ul li a.link:hover {
+    color: #830c0c;
+}
+#Skills ul li ul li{
+    margin-left: 20px;
+    list-style-type:circle; 
+}
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .row {
+        margin: 1%;
+    }
+    .row h2 {
+        font-size: 20px;
+    }
+    .row p {
+    font-size: 12px;
+    }
+    ul li{
+        font-size: 12px;
+    }
+    ul li p{
+        font-size: 12px;
+    }
+    ul li a::after{
+        transition: background-color 0.3s ease;
+    }
+    ul li a:hover{
+        background-color: #d33a3a;
+    }
+}

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+#searchbar{
+    color: #282828;
+    width: 50%;
+    height: 2em;
+}
+.search i {
+    margin-right: 10px;
+    line-height: 1.5em;
+}
+
+.project_Body {
+    display: flex;              /* Enables flex layout for child items */
+    flex-wrap: wrap;            /* Wraps items to a new row if screen is too narrow */
+    justify-content: space-evenly; /* Spaces out items evenly */
+    gap: 20px;                  /* Adds space between items */
+    padding: 10px;
+}
+
+.projects {
+    flex: 1 1 30%;              /* Flexible basis for  (growing and shrinking */
+    max-width: 400px;           /* Prevents items from becoming too wide */
+    min-width: 250px;           /* Ensures items don’t shrink too much on smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 20px;
+    color: snow;
+    background-color: rgb(112, 88, 134);
+    background-attachment:local;
+    transition: 0.5s;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .projects {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        padding: 10px;
+        max-width:500px;
+        min-width: 400px;
+    }
+}
+
+.projects h3{
+    padding: 5px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+}
+.Pl{
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size:16px;
+    color: black;
+}
+@media (max-width: 600px){
+    .Pl{
+        font-size:14px;
+    }
+}
+.projects:hover{
+    transition: 0.5s;
+    border: 1px solid #405362;
+}
+.projects img {
+    width: 100%;
+    height: 230px;
+}
+@media (max-width:600px){
+    .project img{
+        height: 180px;
+    }
+}
+.body p{
+    padding: 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+}
+footer{
+    float: left;
+}

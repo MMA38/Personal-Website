@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website Created for Ass1"> 
+    <meta name="keywords" content="my content"> 
+    <meta name="author" content="Manaf Akil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!--Local Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="css/StyleContact.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <script src="https://kit.fontawesome.com/df8cdcaf2d.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Lobster&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <!--page header navigation , consistent on all pages-->
+        <nav class="sticky-top">
+            <!--logo picture with link to my github-->
+            <a href="https://github.com/MMA38"><img src="Media/Software.png" alt="desktop screen with symbol of
+        coding at the top and below they wrote'software enginerring" title="SVU" width="90" height="90"></a>
+            <div class="pageslinks" id="p.links">
+                <ul>
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li><a class="link" href="Projects.html">My Project</a></li>
+                    <li><a class="link" href="resume.html">My Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="name">
+            <h1>Get in Touch</h1>
+        </div>
+    </div>
+    <!-- information section (sidebar and remaining info body-->
+    <div class="contact_info">
+        <form action="process.php" method="post" enctype="text/plain">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Subject -->
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="5" maxlength="100">
+            </div>
+    
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="10" maxlength="500" rows="5"></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Author: Manaf Akil &copy; </p>
+        <p>Last update: 10-14-2024</p>
+    </footer>
+</body>
+</html>
